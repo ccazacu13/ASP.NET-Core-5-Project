@@ -1,0 +1,22 @@
+﻿
+@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+
+<div class="card d-flex w-100 flex-row my-2">
+    <img class="card-img-top w-25 border border-primary m-to img2" src="@Model.Picture" alt="Nu exista o imagine disponibila">
+    <div class="card-body d-flex flex-column w-100">
+        <div class="d-flex flex-row justify-content-between">
+            <h5 class="card-title h-25">@Model.Title</h5>
+        </div>
+        <p class="card-text h-50 w-100">@Model.Description</p>
+        <div class="h-25 w-100">
+
+            <br />
+            <div><i class="bi bi-globe"></i> @Model.Category.CategoryName</div>
+        </div>
+    </div>
+</div>
+
+        

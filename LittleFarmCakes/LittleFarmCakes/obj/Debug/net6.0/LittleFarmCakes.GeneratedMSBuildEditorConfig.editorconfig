@@ -1,0 +1,140 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = LittleFarmCakes
+build_property.RootNamespace = LittleFarmCakes
+build_property.ProjectDir = C:\Users\pasar\OneDrive - unibuc.ro\Desktop\Facultate\Obt\LittleFarmCakesFinal\LittleFarmCakes\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\pasar\OneDrive - unibuc.ro\Desktop\Facultate\Obt\LittleFarmCakesFinal\LittleFarmCakes
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/pasar/OneDrive - unibuc.ro/Desktop/Facultate/Obt/LittleFarmCakesFinal/LittleFarmCakes/Areas/Identity/Pages/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pasar/OneDrive - unibuc.ro/Desktop/Facultate/Obt/LittleFarmCakesFinal/LittleFarmCakes/Areas/Identity/Pages/Account/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxfVmlld0ltcG9ydHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pasar/OneDrive - unibuc.ro/Desktop/Facultate/Obt/LittleFarmCakesFinal/LittleFarmCakes/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pasar/OneDrive - unibuc.ro/Desktop/Facultate/Obt/LittleFarmCakesFinal/LittleFarmCakes/Areas/Identity/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pasar/OneDrive - unibuc.ro/Desktop/Facultate/Obt/LittleFarmCakesFinal/LittleFarmCakes/Areas/Identity/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pasar/OneDrive - unibuc.ro/Desktop/Facultate/Obt/LittleFarmCakesFinal/LittleFarmCakes/Views/Carts/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydHNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pasar/OneDrive - unibuc.ro/Desktop/Facultate/Obt/LittleFarmCakesFinal/LittleFarmCakes/Views/Categories/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pasar/OneDrive - unibuc.ro/Desktop/Facultate/Obt/LittleFarmCakesFinal/LittleFarmCakes/Views/Categories/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pasar/OneDrive - unibuc.ro/Desktop/Facultate/Obt/LittleFarmCakesFinal/LittleFarmCakes/Views/Categories/New.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xOZXcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pasar/OneDrive - unibuc.ro/Desktop/Facultate/Obt/LittleFarmCakesFinal/LittleFarmCakes/Views/Categories/Show.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xTaG93LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pasar/OneDrive - unibuc.ro/Desktop/Facultate/Obt/LittleFarmCakesFinal/LittleFarmCakes/Views/Comments/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tbWVudHNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pasar/OneDrive - unibuc.ro/Desktop/Facultate/Obt/LittleFarmCakesFinal/LittleFarmCakes/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pasar/OneDrive - unibuc.ro/Desktop/Facultate/Obt/LittleFarmCakesFinal/LittleFarmCakes/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pasar/OneDrive - unibuc.ro/Desktop/Facultate/Obt/LittleFarmCakesFinal/LittleFarmCakes/Views/Home/ShowHome.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTaG93SG9tZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pasar/OneDrive - unibuc.ro/Desktop/Facultate/Obt/LittleFarmCakesFinal/LittleFarmCakes/Views/Products/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pasar/OneDrive - unibuc.ro/Desktop/Facultate/Obt/LittleFarmCakesFinal/LittleFarmCakes/Views/Products/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pasar/OneDrive - unibuc.ro/Desktop/Facultate/Obt/LittleFarmCakesFinal/LittleFarmCakes/Views/Products/IndexNou.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcSW5kZXhOb3UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pasar/OneDrive - unibuc.ro/Desktop/Facultate/Obt/LittleFarmCakesFinal/LittleFarmCakes/Views/Products/New.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcTmV3LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pasar/OneDrive - unibuc.ro/Desktop/Facultate/Obt/LittleFarmCakesFinal/LittleFarmCakes/Views/Products/Show.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcU2hvdy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pasar/OneDrive - unibuc.ro/Desktop/Facultate/Obt/LittleFarmCakesFinal/LittleFarmCakes/Views/Products/Validate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcVmFsaWRhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pasar/OneDrive - unibuc.ro/Desktop/Facultate/Obt/LittleFarmCakesFinal/LittleFarmCakes/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pasar/OneDrive - unibuc.ro/Desktop/Facultate/Obt/LittleFarmCakesFinal/LittleFarmCakes/Views/Shared/ProductInfo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFByb2R1Y3RJbmZvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pasar/OneDrive - unibuc.ro/Desktop/Facultate/Obt/LittleFarmCakesFinal/LittleFarmCakes/Views/Shared/ValidateInfo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFZhbGlkYXRlSW5mby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pasar/OneDrive - unibuc.ro/Desktop/Facultate/Obt/LittleFarmCakesFinal/LittleFarmCakes/Views/Shared/_LayoutNou.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXROb3UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pasar/OneDrive - unibuc.ro/Desktop/Facultate/Obt/LittleFarmCakesFinal/LittleFarmCakes/Views/Shared/_LoginPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pasar/OneDrive - unibuc.ro/Desktop/Facultate/Obt/LittleFarmCakesFinal/LittleFarmCakes/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pasar/OneDrive - unibuc.ro/Desktop/Facultate/Obt/LittleFarmCakesFinal/LittleFarmCakes/Views/Users/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pasar/OneDrive - unibuc.ro/Desktop/Facultate/Obt/LittleFarmCakesFinal/LittleFarmCakes/Views/Users/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pasar/OneDrive - unibuc.ro/Desktop/Facultate/Obt/LittleFarmCakesFinal/LittleFarmCakes/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pasar/OneDrive - unibuc.ro/Desktop/Facultate/Obt/LittleFarmCakesFinal/LittleFarmCakes/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pasar/OneDrive - unibuc.ro/Desktop/Facultate/Obt/LittleFarmCakesFinal/LittleFarmCakes/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-04g3pqpkhy

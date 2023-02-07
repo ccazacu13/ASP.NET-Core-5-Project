@@ -1,0 +1,25 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@model LittleFarmCakes.Models.ApplicationUserRole
+
+<h1>Aici poti vizualiza utilizatorii</h1>
+<br /><br />
+<hr />
+
+@if(ViewBag.Message != null)
+{
+    <h2 class="alert-success p-3 rounded-3 text-center mb-5">@ViewBag.Message</h2>
+}
+
+@foreach(var userRole in ViewBag.UserRoles)
+{
+    <h3>@userRole.User.UserName</h3>
+    <br />
+    <a class="btn btn-success" href="/Users/Edit/@userRole.UserId">Afisare utilizator</a>
+    <br /><br />
+    <hr />
+}

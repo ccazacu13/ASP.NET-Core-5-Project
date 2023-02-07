@@ -1,0 +1,28 @@
+﻿@model LittleFarmCakes.Models.Category
+
+@{
+    ViewBag.Title = "Editare categorie";
+}
+
+<h2>@ViewBag.Title</h2>
+
+
+@using (Html.BeginForm(controllerName: "Categories", actionName: "Edit", method: FormMethod.Post,
+     routeValues: new { id = Model.Id }))
+{
+    @Html.Label("CategoryName", "Denumire categorie")
+
+    <br />
+
+    <input class="adauga" value="@Model.CategoryName" name="CategoryName" />
+    <br />
+
+
+    @Html.ValidationMessageFor(m => m.CategoryName, null, new { @class = "text-danger" })
+    <br />
+
+
+    <button class=" btn btn-primary m-3" type="submit">Modifica categoria</button>
+}
+
+

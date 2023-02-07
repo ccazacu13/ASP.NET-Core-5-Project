@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewBag.Image = "https://static.vecteezy.com/system/resources/thumbnails/009/357/549/small_2x/eps10-grey-cake-line-icon-isolated-on-white-background-cake-with-candles-outline-symbol-in-a-simple-flat-trendy-modern-style-for-your-web-site-design-logo-pictogram-and-mobile-application-free-vector.jpg";
+}
+
+
+
+<div class="card d-flex w-100 flex-row my-2 productInfo h-auto pb-3">
+    <img class="card-img-top m-to img2" src="@Model.Picture" onerror="this.onerror=null;this.src='@ViewBag.Image'" alt="Nu exista o imagine disponibila">
+    <div class="card-body d-flex flex-column w-100">
+        <div class="d-flex flex-row justify-content-between h-auto">
+            <h5 class="card-title title">@Model.Title</h5>
+            <div class="flex-grow-1"></div>
+            @if (Model.Rating != 0)
+            {
+                <div class="justify-content-end">Rating: @Model.Rating</div>
+            }
+        </div>
+        <div class="card-text">@Html.Raw(Model.Description)</div>
+        <div class="h-auto w-100 mb-3">
+            <i class="bi bi-globe"></i> @Model.Category.CategoryName
+        </div>
+    </div>
+</div>
+

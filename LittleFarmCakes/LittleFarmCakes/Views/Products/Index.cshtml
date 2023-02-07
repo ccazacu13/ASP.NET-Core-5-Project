@@ -1,0 +1,68 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+
+@if (ViewBag.Message != null)
+{
+    <h2 class="alert-success p-3 rounded-3 text-center mb-5">@ViewBag.Message</h2>
+}
+
+<br />
+
+<div class="d-flex flex-row searchDiv">
+
+    @* Motorul de cautare *@
+    <form method="GET" class="searchBar">
+        <div class="input-group mb-3 w-auto">
+            <input type="text" class="form-control w-75" placeholder="Search topics or keywords" name="search"
+                   value="@ViewBag.SearchString">
+            <button class="btn btn-outline-success w-auto" type="submit">Search</button>
+        </div>
+    </form>
+
+    <a asp-action="Index" asp-route-sortOrder="@ViewBag.RaitingSortParam" class="btn btn-succes"><i class="bi bi-filter"></i></a>
+
+</div>
+
+<div class="d-flex flex-column">
+    @foreach (LittleFarmCakes.Models.Product product in ViewBag.Products)
+    {
+        <a href="/Products/Show/@product.Id" class="text-decoration-none text-secondary">
+            @Html.Partial("ProductInfo", product)
+        </a>
+
+        <br />
+        <br />
+    }
+    <div />
+
+@* Afisarea paginata a produselor *@
+
+<div>
+    <nav aria-label="Page navigation example">
+        <ul class="pagination">
+            <li class="page-item">
+                <a class="page-link" href="@ViewBag.PaginationBaseUrl=1&sortOrder=@ViewBag.RaitingSortReverse" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                </a>
+            </li>
+
+            @for (int i = 1; i <= ViewBag.lastPage; i++)
+            {
+                <li class="page-item">
+                    @*<a class="page-link" href="@ViewBag.PaginationBaseUrl=@i">@(i)</a> *@
+                    <a class="page-link" href="@ViewBag.PaginationBaseUrl=@i&sortOrder=@ViewBag.RaitingSortReverse">@(i)</a>
+                </li>
+            }
+
+            <li class="page-item">
+                <a class="page-link" href="@ViewBag.PaginationBaseUrl=@(ViewBag.lastPage)&sortOrder=@ViewBag.RaitingSortReverse" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</div>
+
+

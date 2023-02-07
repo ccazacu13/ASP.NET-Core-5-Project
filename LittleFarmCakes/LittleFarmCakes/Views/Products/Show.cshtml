@@ -1,0 +1,189 @@
+﻿@model LittleFarmCakes.Models.Product
+
+@{
+    ViewBag.Image = "https://static.vecteezy.com/system/resources/thumbnails/009/357/549/small_2x/eps10-grey-cake-line-icon-isolated-on-white-background-cake-with-candles-outline-symbol-in-a-simple-flat-trendy-modern-style-for-your-web-site-design-logo-pictogram-and-mobile-application-free-vector.jpg";
+}
+
+
+@* Afisarea unui produs impreuna cu categoria din care face *@
+
+
+<br />
+
+@if (ViewBag.Message != null)
+{
+    <h2 class="alert-success p-3 rounded-3 text-center mb-5">@ViewBag.Message</h2>
+}
+
+<div class="card h-auto d-flex flex-column">
+
+    <div class="d-flex flex-row p-3 contain w-100 showModify">
+        <img class="card-img-top m-to img2" src="@Model.Picture"
+             onerror="this.onerror=null;this.src='@ViewBag.Image'" alt="Nu exista o imagine disponibila">
+        <div class=" h-auto w-100">
+            <div class="d-flex w-100 flex-column my-2 h-100">
+                <div class="card-body d-flex flex-column w-100 ">
+                    <div class="d-flex flex-row justify-content-between">
+                        <h5 class="card-title  title">@Model.Title</h5>
+                        <div class="flex-grow-1"></div>
+                        @if (Model.Rating != 0)
+                        {
+                            <div class="justify-content-end">Rating: @Model.Rating</div>
+                        }
+                    </div>
+                    <div class="w-100 desc description">
+                        <p class="card-text m-2">@Html.Raw(Model.Description)</p>
+                    </div>
+                    <div class="h-25 w-100 d-flex justify-content-end align-items-end">
+                        <div><i class="bi bi-globe"></i> @Model.Category.CategoryName</div>
+                    </div>
+                </div>
+                <div class="d-flex flex-row h-25">
+                    <div style="margin-left: 10px" class="justify-content-center align-items-center pt-1">
+                        <form method="post" action="/Carts/AddToCart" class="d-inline-flex mb-2 pl-2 align-content-center justify-content-center">
+
+                            <div class="d-flex justify-content-center align-items-center ">
+                                <button type="submit" class="btn btn-success d-inline m-2 ">Adauga in cos</button>
+                                <input type="number" name="Count" id="hiddenInput" value="1" min="1" class="h-75 counter" />
+                                <input type="hidden" name="ProductId" value="@Model.Id" id="nr" />
+                            </div>
+
+                        </form>
+                    </div>
+                    <div class="flex-grow-1"></div>
+                    @*<h1>@ViewBag.AfisareButoane @ViewBag.*@
+                    @if (ViewBag.AfisareButoane == true && ViewBag.UserCurent == Model.User || ViewBag.EsteAdmin)
+                    {
+                        <div class="d-flex flex-row justify-content-between p-3 ">
+
+                            <a class="btn btn-success w-auto btnSuccess" href="/Products/Edit/@Model.Id">Editeaza produs</a>
+
+                            <form method="post" action="/Products/Delete/@Model.Id">
+
+                                <button class="btn btn-danger btnStergere" type="submit">Sterge produs</button>
+
+                            </form>
+
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+</div>
+
+
+
+<br />
+<br />
+
+
+@* Afisare comentarii impreuna cu butoanele de editare si stergere *@
+
+@foreach (var comm in Model.Comments)
+{
+    <div class="container comment">
+        <div class="row w-100 justify-content-center m-auto">
+            @*<div class="col-md-2"></div>*@
+
+            <div class="col-md-8 card m-4">
+
+                <div>
+
+                    @if (comm.Stars is not null)
+                    {
+                        <p>Rating: @comm.Stars</p>
+                    }
+                    <p>@comm.Content</p>
+                    <small>@comm.Date</small>
+                    <strong><i class="bi bi-person"></i>@comm.User.UserName</strong>
+
+                </div>
+                <br>
+
+
+                @if (comm.UserId == ViewBag.UserCurent || ViewBag.EsteAdmin)
+                {
+
+                    <div class="d-flex">
+
+                        <div>
+
+                            <a class="btn btn-outline-primary" href="/Comments/Edit/@comm.Id"><i class="bi bi-pencil-square"></i>Editeaza</a>
+
+                        </div>
+
+                        <div>
+
+                            <form method="post" action="/Comments/Delete/@comm.Id">
+
+                                <button class="btn btn-outline-danger" type="submit"><i class="bi bi-trash"></i>Sterge</button>
+
+                            </form>
+
+                        </div>
+
+                    </div>
+                }
+
+                <br />
+
+            </div>
+
+            @*<div class="col-md-2"></div>*@
+
+        </div>
+
+    </div>
+}
+
+
+@* Afisarea formularului in care se poate adauga un comentariu *@
+
+<div class="container">
+
+    <div class="row">
+
+        <div class="col-md-2"></div>
+
+        <div class="col-md-8">
+
+            <div class="card">
+
+                <form method="post" action="/Products/Show/@Model.Id">
+
+                    <div class="card-body">
+
+                        <input type="hidden" name="ProductId" value="@Model.Id" />
+
+                        <label>Continut comentariu</label>
+                        <br />
+
+                        <textarea class="form-control" name="Content"></textarea>
+
+                        @Html.ValidationMessage("Content", null, new { @class = "text-danger"})
+                        <br />
+
+                        @Html.DropDownList("Stars", new SelectList(Model.Ratings, "Value", "Text"),
+                        "Evaluati produsul", new { @class = "form-control" })
+
+                        <br /><br />
+
+                        <button class="btn btn-success " type="submit">Adauga comentariul</button>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-2"></div>
+
+    </div>
+
+</div>

@@ -1,0 +1,49 @@
+﻿@model LittleFarmCakes.Models.Product
+
+<h3 class="text" ">Adaugare produs</h3>
+<br />
+<div class="container mt-5">
+    <div class="row">
+        <div class="form">
+
+            @using (Html.BeginForm(actionName: "New", controllerName: "Products",
+            method: FormMethod.Post))
+            {
+            @Html.Label("Title","Numele produsului")
+            <br />
+            @Html.TextBox("Title", null, new { @class = "adauga" })
+            <br />
+
+            @Html.ValidationMessageFor(m => m.Title, "", new { @class = "text-danger" })
+            <br />
+            @Html.Label("Description", "Descrierea produsului")
+            <br />
+            @Html.TextArea("Description", null, new { @class = "summernote" })
+            <br />
+
+            @Html.ValidationMessage("Description", null, new { @class = "text-danger" })
+            <br />
+
+            <label>Selectati categoria</label>
+            <br />
+            @Html.DropDownListFor(m => m.CategoryId, new SelectList(Model.Categ, "Value", "Text"),
+            "Selectati categoria", new { @class = "adauga" })
+            <br />
+            @Html.ValidationMessageFor(m => m.CategoryId, null, new { @class = "text-danger" })
+            <br />
+
+
+
+            @Html.Label("Picture", "Imaginea produsului")
+            <br />
+            @Html.TextBox("Picture", null, new { @class = "adauga" })
+
+            <br />
+
+            @Html.Label("Price", "Pretul produsului")
+            <br />
+            @Html.TextBox("Price", null, new { @class = "adauga" })
+            <br />
+
+            <button type="submit" class="btn btn-primary m-3">Adauga produsul</button>
+            }

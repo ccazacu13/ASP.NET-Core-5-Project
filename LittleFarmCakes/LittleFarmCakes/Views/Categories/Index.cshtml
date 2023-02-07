@@ -1,0 +1,39 @@
+﻿@{
+    ViewBag.Title = "Lista categorii";
+}
+
+<h2>@ViewBag.Title</h2>
+<br />
+
+@if (TempData.ContainsKey("message"))
+{
+    <h1>@ViewBag.message</h1>
+}
+
+
+<br />
+
+@foreach (var category in ViewBag.Categories)
+{
+    <div class="card d-flex w-100 flex-row my-2">
+        <div class="card-body d-flex flex-column w-100">
+            <div class="d-flex flex-row justify-content-between">
+                <h5 class="card-title h-25">@category.CategoryName</h5>
+                <div class="flex-grow-1"></div>
+
+            </div>
+            <div class="h-25 w-100">
+
+                <br />
+                <div class="d-flex justify-content-between">
+                    <a class="btn alert-success" href="/Categories/Show/@category.Id">Afisare categorie</a>
+                    <a class="btn alert-success" href="/Categories/Edit/@category.Id">Editare categorie</a>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+<br />
+<a class=" btn btn-primary m-3" href="/Categories/New">Adauga o noua categorie</a>
+<br />
+

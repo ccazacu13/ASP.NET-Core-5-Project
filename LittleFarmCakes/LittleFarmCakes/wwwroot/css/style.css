@@ -1,0 +1,146 @@
+﻿
+
+.img2 {
+    border: 3px solid #C1FBC1;
+    border-radius: 4px;
+    padding: 5px;
+    width: 250px;
+    height: 250px;
+}
+
+
+.fr1 {
+    border: 3px solid #CBF3F0;
+    border-radius: 6px;
+    width:47%;
+    
+}
+
+.searchBar{
+    width: 96%;
+}
+
+.counter{
+    width: 40px;
+    border: 1px grey solid;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.contain{
+    height: 100%;
+    width: 100%;
+}
+
+.btnStergere{
+    margin-left:10px;
+}
+
+.btnSuccess{
+    height: 38px;
+}
+
+.img {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 270px;
+    padding: 5px;
+    height: 270px;
+    margin-left: 3px;
+}
+
+.img1 {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 200px;
+    height: 200px;
+}
+
+
+.img3 {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 230px;
+    height: 230px;
+    margin-left: 130px;
+    margin-top: 30px;
+}
+
+.fr {
+    border: 3px solid #CBF3F0;
+    border-radius: 6px;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+.adauga{
+    border: 3px solid #6ABCB6;
+    border-radius: 6px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-bottom: 5px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    background-color: #CBF3F0;
+    height: 50%;
+    width: 50%;
+    border-radius: 6px;
+    margin-bottom: 5px;
+}
+
+.text {
+    margin-left: 30%;
+}
+
+.productInfo {
+    background-color: #e5ffe5;
+    border: 3px solid #FFE7D5;
+}
+
+body {
+}
+
+.navbar {
+    background-color: #C1FBC1 !important;
+}
+
+.showModify {
+    background-color: #e5ffe5 !important;
+    border: 3px solid #FFE7D5;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+.carts {
+    background-color: #e5ffe5;
+    border: 3px solid #FFE7D5;
+    padding: 10px;
+}
+
+.cartInput {
+    border-radius: 5px;
+    border: 3px solid #6ABCB6;
+}
+
+.title {
+    font-size: 20px!important;
+    color: #F98D97!important;
+    font-weight: bold;
+}
+
+.imgPodium{
+    height:270px;
+    width: 270px;
+    margin-left:85px;
+}
+
+.description {
+    min-height: 75% !important;
+}

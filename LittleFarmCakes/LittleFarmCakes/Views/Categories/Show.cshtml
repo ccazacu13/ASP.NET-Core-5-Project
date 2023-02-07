@@ -1,0 +1,33 @@
+﻿@model LittleFarmCakes.Models.Category
+@{
+    ViewBag.Title = "Afisare categorie";
+}
+<h2>@ViewBag.Title</h2>
+
+<br />
+
+
+<div class="card d-flex w-100 flex-row my-2">
+    <div class="card-body d-flex flex-column w-100">
+        <div class="d-flex flex-row justify-content-between">
+            <h5 class="card-title h-25">@Model.CategoryName</h5>
+            <div class="flex-grow-1"></div>
+
+        </div>
+        <div class="h-25 w-100">
+
+            <br />
+            <div class="d-flex justify-content-between">
+                <form method="post" action="/Categories/Delete/@Model.Id">
+
+                    <button class="btn btn-danger" type="submit">Sterge categoria</button>
+
+                </form>
+                <br />
+                <a class="btn alert-success" href="/Categories/Index/">Afisare lista categorii</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
